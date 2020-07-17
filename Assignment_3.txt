@@ -1,0 +1,12 @@
+Overview of SQL
+
+1) Does ANSI recognize the data type DATE?
+Ans: Yes. Following example will show valid input and output format of date data-type.
+	Ansidate		yyyy-mm-dd		2020-07-17
+
+2) Which subdivision of SQL is used to insert values in tables?
+Ans: We can insert data two ways in table
+	1) Insert directly in a table eg: INSERT INTO employee (id, name, dept, age, salary location) VALUES (105, 'Srinath', 'Aeronautics', 27, 33000);
+	2) Insert data into a table through select statement (Mostly to insert row from temporary table to main table)
+		eg: INSERT INTO employee (id, name, dept, age, salary location) SELECT emp_id, emp_name, dept, age, salary, location
+		       FROM temp_employee;
