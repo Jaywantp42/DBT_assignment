@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document_selector by class</title>
+    <style>
+        .outer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .inner{
+            display: flex;
+            width: 50vw;
+            border: 1px solid orange;
+            background-color: orangered;
+            font-size: 5rem;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
+    <script src="by_class.js"></script>
+</head>
+<body>
+    <div id="id1" class="outer">
+
+        <div id="id2" class="inner" onmouseover="mouseover()" onmouseout="mouseout()">
+            Me punha yenar
+        </div>
+
+    </div>
+</body>
+</html>
