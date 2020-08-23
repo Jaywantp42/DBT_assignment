@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ID-Card-layout</title>
+    <link rel="stylesheet" href="id_card.css">
+    <script src="id_card.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="col form" style="background-color: rgba(180, 149, 149, 0.678);">
+                <div><h1>Employee ID Generator</h1></div>
+                <div>
+                    <input type="text" name="" id="Name" placeholder="Enter Your Name"> <br>
+                    <input type="text" name="" id="ID" placeholder="Enter Employee ID"> <br>
+                    <input type="text" name="" id="work" placeholder="Enter Designation"> <br>
+                    <input type="text" name="" id="Bldgrp" placeholder="Enter Blood-Group"> <br>
+                    <input type="text" name="" id="Phnno" placeholder="Enter Mobile Number"> <br>
+                   <!-- <form action="">
+                        <label for="image">Image:</label>
+                        <input type="file" name="" id="imgflie" accept="image/*">                        
+                    </form> -->
+                    <label for="file">add image</label>
+                    <input type="file" name="" id="file" accept="image/*"> <br>
+                    <button class="button"onclick="submit_emp_info()">Sumbit</button>
+                </div>
+            </div>
+
+            
+
+            <div class="col idcardcontainer">
+
+                <div class="card mb-3" style="max-width: 18rem; border: 0.5px solid rgb(224, 28, 28)">
+                    <div class="card-header bg-transparent border-light company_logo"></div>
+                    <div class="card-body cardbody">
+                        <!--<div id="mainimgbox"> 
+                            <div style="margin-bottom: 20px; margin-top: 10px;" id="imagebox">
+                                <center><img src="sample-person_0.png" alt="employee ID" width='95px' height='95px' style="border-radius: 20px;"></center>
+                            </div>
+                        </div>-->
+
+
+                        <div id="parent">
+                            <div id="reference" style="display: flex; justify-content: center; margin-bottom: 20px; margin-top: 10px;">
+                               <img  src="sample-person_0.png" width="95px" height="95px" alt="photo" style="border-radius: 20px; ">
+                            </div>
+                        </div>
+
+                        
+                            <div class="info main_body">
+                                <div>Name:</div>
+                                <div id="nameid">
+                                    <div id="empnm"> <div>NA</div>  </div>
+                                </div>
+                            </div>
+                            <div class="info main_body">
+                                <div>Employee ID:</div>
+                                <div id="empidid">
+                                    <div id="empid">  <div>NA</div> </div>
+                                </div>
+                            </div>
+                            <div class="info main_body">
+                                <div>Designation:</div>
+                                <div id="empworkmain">
+                                    <div id="empwork"> <div>NA</div> </div>
+                                </div>
+                            </div>
+                            <div class="info main_body">
+                                <div>Blood Group:</div>
+                                <div id="empbldgp">
+                                    <div id="bloodgp"> <div>NA</div> </div>
+                                </div>
+                            </div>
+                            <div class="info main_body">
+                                <div>Phone Number:</div>
+                                <div id="empphno">
+                                    <div id="phno"> <div>NA</div> </div>
+                                </div>
+                            </div>
+                           
+
+                    </div>
+                    <div class="card-footer bg-danger footer"><a href="#">in.bookmyshow.com</a></div>
+                  </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>
